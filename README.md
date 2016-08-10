@@ -1,3 +1,4 @@
 # quantlib-python-on-vagrant
-Vagrantfile to setup QuantLib for Python
+Bootstrap file to setup QuantLib for Python on Vagrant
 
+Just add the `bootstrap.sh` file to your `Vagrantfile`
