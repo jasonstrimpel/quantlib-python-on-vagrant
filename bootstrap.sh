@@ -4,7 +4,7 @@ sudo apt-get update -y
 # install dependencies
 sudo apt-get install -y libboost-all-dev make automake autoconf libtool python-dev swig git
 
-# get and install quantlig
+# get and install quantlib
 # http://quantlib.org/install/linux.shtml
 git clone https://github.com/lballabio/QuantLib.git
 cd QuantLib
