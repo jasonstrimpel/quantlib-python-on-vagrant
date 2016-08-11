@@ -8,7 +8,7 @@ sudo apt-get install -y libboost-all-dev make automake autoconf libtool python-d
 # http://quantlib.org/install/linux.shtml
 git clone https://github.com/lballabio/QuantLib.git
 cd QuantLib
-./autogen.sg
+./autogen.sh
 ./configure
 make
 sudo make install
