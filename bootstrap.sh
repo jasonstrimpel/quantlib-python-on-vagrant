@@ -17,9 +17,9 @@ sudo ldconfig
 # get and install anaconda python
 # https://www.continuum.io/downloads#_unix
 cd ../
-wget http://repo.continuum.io/archive/Anaconda2-4.1.1-Linux-x86_64.sh -O ~/anaconda.sh
-bash ~/anaconda.sh -b -p $HOME/anaconda2
-export PATH="$HOME/anaconda2/bin:$PATH"
+wget http://repo.continuum.io/archive/Anaconda2-4.1.1-Linux-x86_64.sh -O /home/vagrant/anaconda.sh
+bash /home/vagrant/anaconda.sh -b -p /home/vagrant/anaconda2
+export PATH="/home/vagrant/anaconda2/bin:$PATH"
 
 # get and install quantlib-swig
 # http://quantlib.org/install/linux-python.shtml
