@@ -4,6 +4,14 @@ sudo apt-get update -y
 # install dependencies
 sudo apt-get install -y libboost-all-dev g++ make automake autoconf libtool python-dev swig git
 
+# setup and enable 4g swap
+# https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
+sudo fallocate -l 4G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo sysctl vm.swappiness=10
+
 # get and install quantlib
 # http://quantlib.org/install/linux.shtml
 git clone -q https://github.com/lballabio/QuantLib.git
