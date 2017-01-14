@@ -21,8 +21,8 @@ Vagrant.configure(2) do |config|
   # Example for VirtualBox:
   #
   config.vm.provider "virtualbox" do |vb|
-      # Customize the amount of memory on the VM:
-      vb.memory = "4096"
+    # Customize the amount of memory on the VM:
+    vb.memory = "4096"
   end
   #
   # View the documentation for the provider you are using for more
@@ -32,6 +32,6 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   # This provisions with a bootstrap script running as vagrant user (privledged: false)
-  config.vm.provision "shell", path: "bootstrap.sh", privledged: false
+  config.vm.provision "shell", path: "bootstrap.sh", privileged: false
 
 end
