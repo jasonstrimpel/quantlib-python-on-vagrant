@@ -39,3 +39,15 @@ cd QuantLib-SWIG
 make -C Python
 sudo make -C Python install
 sudo ldconfig
+
+# start unsecured notebook server
+http://jupyter-notebook.readthedocs.io/en/latest/public_server.html
+cd ~
+jupyter notebook --generate-config
+cd ~/.jupyter
+rm ipython_notebook_config.py
+wget -q https://raw.githubusercontent.com/jasonstrimpel/quantlib-python-on-vagrant/master/jupyter_notebook_config.py
+mkdir ~/notebooks
+cd ~/notebooks
+jupyter notebook
+
