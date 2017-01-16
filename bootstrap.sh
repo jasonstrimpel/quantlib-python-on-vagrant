@@ -51,7 +51,7 @@ http://jupyter-notebook.readthedocs.io/en/latest/public_server.html
 cd ~
 jupyter notebook --generate-config
 cd ~/.jupyter
-rm ipython_notebook_config.py
+rm jupyter_notebook_config.py
 wget -q https://raw.githubusercontent.com/jasonstrimpel/quantlib-python-on-vagrant/master/jupyter_notebook_config.py
 mkdir ~/notebooks
 cd ~/notebooks
