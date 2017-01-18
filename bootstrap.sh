@@ -17,7 +17,7 @@ sudo sysctl vm.swappiness=10
 git clone -q https://github.com/lballabio/QuantLib.git
 cd QuantLib
 ./autogen.sh
-./configure
+./configure --enable-intraday
 make
 sudo make install
 sudo ldconfig
@@ -41,7 +41,7 @@ cd ~
 git clone https://github.com/lballabio/QuantLib-SWIG.git
 cd QuantLib-SWIG
 ./autogen.sh
-./configure
+./configure --disable-perl --disable-ruby --disable-mzscheme --disable-guile --disable-csharp --disable-ocaml --disable-r --disable-java
 make -C Python
 sudo make -C Python install
 sudo ldconfig
