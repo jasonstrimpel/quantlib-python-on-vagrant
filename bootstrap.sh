@@ -29,6 +29,12 @@ wget -q http://repo.continuum.io/archive/Anaconda2-4.1.1-Linux-x86_64.sh -O ~/an
 bash ~/anaconda.sh -b -p $HOME/anaconda2
 export PATH="$HOME/anaconda2/bin:$PATH"
 
+echo "***Set path in .bashrc***"
+cat >> $HOME/.bashrc << END
+# add for anaconda install
+PATH=$HOME/anaconda2/bin:\$PATH
+END
+
 # get and install quantlib-swig
 # http://quantlib.org/install/linux-python.shtml
 cd ~
